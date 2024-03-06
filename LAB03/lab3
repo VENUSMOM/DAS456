@@ -1,0 +1,27 @@
+Reflection:
+
+Writing Recursive Functions:
+
+When approaching the task of writing recursive functions, several steps can guide the process:
+
+1. Define a Base Case: Establish a condition that will halt the recursive process. This is crucial to prevent infinite recursion and ensure the function terminates correctly.
+
+2. Determine Recursive Cases: Identify the scenarios where the function should call itself recursively. These cases typically involve breaking down the problem into smaller, similar subproblems.
+
+3. Implement Recursive Calls: Write the recursive calls within the function, making sure they move closer to the base case with each iteration. This ensures progress towards termination.
+
+4. Handle Inputs and Outputs: Manage the inputs and outputs of the function, ensuring that they are appropriately processed and returned at each level of recursion.
+
+5. Optimize for Complexity: Consider the space and time complexity of the recursive function. Aim to optimize performance by minimizing unnecessary recursive calls and optimizing the algorithm's efficiency.
+
+Analyzing Recursive Functions:
+
+Analyzing recursive functions involves understanding how they break down problems into smaller subproblems and how they use recursion to solve these subproblems. While there are similarities with analyzing non-recursive functions, such as considering time and space complexity, there are some key differences:
+
+1. Base Case Consideration: In recursive analysis, special attention is given to ensuring that the base case is reachable and correctly handles the termination of recursion. This is a crucial aspect absent in the analysis of non-recursive functions.
+
+2. Recurrence Relations: Recursive analysis involves examining how the function divides the problem into smaller instances and applies a recurrence relation to solve them. Understanding this relation is essential for evaluating the efficiency and behavior of the recursive function.
+
+3. Complexity Evaluation: Both recursive and non-recursive functions are subject to complexity analysis, where constants are typically ignored in the final assessment. However, recursive analysis also involves considering the overhead of function calls and stack usage, which can impact the overall performance.
+
+In summary, while the process of analyzing recursive functions shares similarities with analyzing non-recursive functions, such as complexity evaluation, it also involves unique considerations related to base cases, recurrence relations, and the nature of recursion itself.
