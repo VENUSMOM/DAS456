@@ -1,0 +1,11 @@
+Reflection
+
+When analyzing the code from lab 1, I observed distinct differences between the fastest and slowest versions in terms of performance and resource usage.
+
+The fastest version of the code prioritized performance optimization. It streamlined the logic by utilizing a single while loop and avoided recursion. Recursion, especially in deep levels, tends to slow down programs and can lead to crashes if there's insufficient memory available. On the other hand, the slower versions, such as the sum_to_goal function, employed more 'if' statements compared to the faster code. Additionally, in the slow fibonacci function, the recursive nature meant that each function call resulted in two more calls, leading to a significant number of function calls for large values of 'i' and consequently slower execution.
+
+In terms of space resource usage, the faster code demonstrated efficiency by avoiding recursion. Recursion typically consumes more memory as each function call creates a new stack frame to store local variables, input parameters, and return addresses. Conversely, the slow fibonacci function, with its recursive calls, consumed more memory due to the accumulation of stack frames.
+
+From these observations, several conclusions can be drawn. Firstly, the execution time differences among group members may not solely stem from the approach to problem-solving but could also be influenced by factors such as processor speed, available memory, concurrent processes, and compiler variations. Moreover, the similarity in syntax between the fastest and slowest codes for sum_to_goal suggests that execution speed is impacted more by algorithmic choices and resource management than syntactical differences.
+
+Furthermore, it became evident that excessive recursion isn't ideal for functions that require numerous self-calls, as it significantly increases memory consumption and slows down execution. Hence, for performance-critical applications, it's essential to carefully consider the trade-offs between using recursion and alternative approaches.
