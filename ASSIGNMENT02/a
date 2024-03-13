@@ -1,0 +1,14 @@
+Part C: Analysis
+
+insert(data):
+
+This function has a time complexity of O(n) in the worst case when the data needs to be inserted in the middle of the list. This is because it may require traversing the entire list to find the correct position to insert the new node.
+remove(data):
+
+Similar to the insert function, the worst-case time complexity of the remove function is O(n). This occurs when the node containing the specified data is either at the end of the list or not present in the list, requiring traversal of the entire list to find and remove the node.
+is_present(data):
+
+The time complexity of this function is O(n) in the worst case, as it may need to traverse the entire list to determine if the specified data is present in any of the nodes.
+len():
+
+This function simply returns the size attribute of the linked list, which is maintained as nodes are added or removed. Therefore, its time complexity is O(1), regardless of the size of the list.
