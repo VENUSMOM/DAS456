@@ -1,0 +1,26 @@
+Part A: Analysis of SortedTable Functions
+
+1. `insert(self, key, value)`:
+   - Complexity: O(n^2)
+   - Analysis: This function first checks if the key already exists in the table by calling the `search` method, which iterates through the table linearly, resulting in O(n) complexity. If the key exists, it returns False immediately. If not, it inserts the new key-value pair at the end of the table, which could take O(n) time. Then, it performs bubble sort to maintain the sorted order of the table, which also takes O(n^2) time in the worst case. Overall, this function has a quadratic time complexity.
+
+2. `modify(self, key, value)`:
+   - Complexity: O(n)
+   - Analysis: This function iterates through the table linearly to find the record with the matching key, resulting in O(n) time complexity in the worst case. If the key is found, it modifies the value and returns True; otherwise, it returns False.
+
+3. `remove(self, key)`:
+   - Complexity: O(n^2)
+   - Analysis: Similar to the `insert` method, this function first searches for the record with the matching key, which takes O(n) time. If found, it removes the record and shifts the subsequent records left to fill the gap, resulting in O(n^2) time complexity due to potential shifting operations.
+
+4. `search(self, key)`:
+   - Complexity: O(n)
+   - Analysis: This function iterates through the table linearly to search for the record with the matching key, resulting in O(n) time complexity in the worst case.
+
+5. `capacity(self)`:
+   - Complexity: O(1)
+   - Analysis: This function simply returns the capacity of the table, which is stored as an attribute and can be retrieved in constant time.
+
+6. `__len__(self)`:
+   - Complexity: O(n)
+   - Analysis: This function iterates through the entire table linearly to count the number of non-None elements, resulting in O(n) time complexity.
+
